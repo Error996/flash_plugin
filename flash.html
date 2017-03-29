@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="font-awesome.css" rel="stylesheet" />
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /*.btn:hover {
+            background: #666666;
+        }*/
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('font/fontawesome-webfont.eot?v=3.2.1');
+            src: url('font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .fa {
+            width: 32px;
+            font-size: 14px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        .fa-puzzle-piece:before {
+            content: "\f12e";
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top:60px">
+        <button class="btn" id="flash">弹出</button>
+    </div>
+    <script src="flash.js"></script>
+    <script>
+        flashPlugin({
+            text: "sdfasdfa",
+            href: "https://www.baidu.com",
+            sourceUrl: "https://github.com/Clloz/mint-ui/archive/master.zip"
+        },"#flash")
+    </script>
+</body>
+</html>
